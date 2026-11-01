@@ -16,3 +16,14 @@ widżetu.
 - `flutter pub get`
 - `flutter run`
 - `flutter test`
+
+## Wydanie Androida
+
+Projekt jest skonfigurowany dla Google Play z identyfikatorem `pl.mkru77.czujnik`.
+Pakiet AAB można zbudować poleceniem `flutter build appbundle --release`.
+
+Podpis wydania korzysta z klucza przesyłania w `android/app/upload-keystore.jks`
+oraz danych w `android/key.properties`. Te pliki są celowo wykluczone z Git.
+Przechowuj bezpieczną kopię obu plików: klucz i hasło będą potrzebne przy
+przygotowywaniu kolejnych wydań. Nie dodawaj ich do repozytorium ani nie
+udostępniaj publicznie.
